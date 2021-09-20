@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: substrapunk_production
-  username: substrapunk
-  password: <%= ENV["SUBSTRAPUNK_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
