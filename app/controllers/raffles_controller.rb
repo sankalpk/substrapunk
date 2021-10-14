@@ -11,6 +11,10 @@ class RafflesController < ApplicationController
         render json: json
     end
 
+    def delete_all
+      Raffle.all.destroy_all
+    end
+
     private
 
     def set_raffle

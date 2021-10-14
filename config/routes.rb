@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get 'raffle/:address', to: 'raffles#show'
   post 'raffle/:address/submit', to: 'raffles#submit'
+  post 'raffles/destroy', to: 'raffles#delete_all'
 end
