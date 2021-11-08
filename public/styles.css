@@ -112,6 +112,17 @@ model-viewer > #ar-prompt > img {
   background-repeat: no-repeat;
 }
 
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+
 @media only screen and (max-width: 750px) {
   #big-header {
     height: 220px;
