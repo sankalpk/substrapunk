@@ -7,6 +7,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  --poster-color: transparent;
 }
 
 model-viewer {
@@ -14,7 +15,6 @@ model-viewer {
   height: 90%;
   background-color: #ffffff;
 }
-
 
 .progress-bar {
   display: block;
@@ -86,6 +86,10 @@ model-viewer {
 @keyframes elongate {
   from { transform: translateX(100px); }
   to   { transform: translateX(-100px); }
+}
+
+#default-poster, .slot.poster, .slot.poster.show {
+  background-color: transparent !important;
 }
 
 model-viewer > #ar-prompt {
