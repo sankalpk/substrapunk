@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   # Almost every application defines a route for the root path ("/") at the top of this file.
   # root "articles#index"
-  get 'raffle/:address', to: 'raffles#show'
-  post 'raffle/:address/submit', to: 'raffles#submit'
+  # get 'raffle/:address', to: 'raffles#show'
+  # post 'raffle/:address/submit', to: 'raffles#submit'
 end
